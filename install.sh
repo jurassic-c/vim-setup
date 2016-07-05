@@ -7,4 +7,6 @@ mkdir -p $HOME/.vim/autoload $HOME/.vim/bundle
 wget https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim -O $HOME/.vim/autoload/pathogen.vim
 cd $HOME/.vim/bundle
 git clone https://github.com/scrooloose/nerdtree.git
+git clone https://github.com/ctrlpvim/ctrlp.vim.git
 cat $INSTALLPATH/vimrc >> $HOME/.vimrc
+echo "set runtimepath^=~/.vim/bundle/ctrlp.vim" >> $HOME/.vimrc
