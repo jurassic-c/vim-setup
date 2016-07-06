@@ -9,5 +9,7 @@ cd $HOME/.vim/bundle
 git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/ctrlpvim/ctrlp.vim.git
 wget http://www.vim.org/scripts/download_script.php?src_id=9223 -O ../plugin/autoclose.vim
+git clone https://github.com/christoomey/vim-tmux-navigator.git /tmp/vim-tmux-navigator
+mv /tmp/vim-tmux-navigator/plugin/*.vim $HOME/.vim/plugin/
 cat $INSTALLPATH/vimrc >> $HOME/.vimrc
 echo "set runtimepath^=~/.vim/bundle/ctrlp.vim" >> $HOME/.vimrc
