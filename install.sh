@@ -11,6 +11,13 @@ wget https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim -O $
 cd $HOME/.vim/bundle
 git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/ctrlpvim/ctrlp.vim.git
+
+# You Complete me is a more involved install
+git clone https://github.com/Valloric/YouCompleteMe.git
+cd YouCompleteMe
+git submodule update --init --recursive
+./install.py
+
 wget http://www.vim.org/scripts/download_script.php?src_id=9223 -O ../plugin/autoclose.vim
 git clone https://github.com/christoomey/vim-tmux-navigator.git /tmp/vim-tmux-navigator
 mv /tmp/vim-tmux-navigator/plugin/*.vim $HOME/.vim/plugin/
