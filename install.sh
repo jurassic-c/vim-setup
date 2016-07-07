@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -Rf $HOME/.vim
+rm -f $HOME/.vimrc
 cd $(dirname $0)
 INSTALLPATH=$(pwd)
 echo "INSTALL PATH: $INSTALLPATH"
