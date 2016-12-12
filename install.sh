@@ -11,6 +11,7 @@ wget https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim -O $
 cd $HOME/.vim/bundle
 git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/ctrlpvim/ctrlp.vim.git
+git clone https://github.com/vimwiki/vimwiki.git
 
 # You Complete me is a more involved install
 git clone https://github.com/Valloric/YouCompleteMe.git
